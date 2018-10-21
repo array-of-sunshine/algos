@@ -9,34 +9,34 @@
 # figure out how to square a number -- DONE
 # add the numbers together (SUM)
 
-sum = 0
-index = 1
-10.times do
-  sum += index * index
-  index += 1
-end
-sum_of_the_squares = sum
+# sum = 0
+# index = 1
+# 100.times do
+#   sum += index * index
+#   index += 1
+# end
+# sum_of_the_squares = sum
 
 
-# square of the sum
-# (1 + 2 + 3 + 4) ** 2
+# # square of the sum
+# # (1 + 2 + 3 + 4) ** 2
 
-# subtract the two numbers
+# # subtract the two numbers
 
-# start off with number 1 -- DONE
-# make a loop -- DONE
-# add the numbers together
-# square the end result
+# # start off with number 1 -- DONE
+# # make a loop -- DONE
+# # add the numbers together
+# # square the end result
 
-sum = 0
-index = 1
-10.times do
-  sum += index
-  index += 1
-end
-square_of_the_sums = sum * sum
+# sum = 0
+# index = 1
+# 100.times do
+#   sum += index
+#   index += 1
+# end
+# square_of_the_sums = sum * sum
 
-p (square_of_the_sums - sum_of_the_squares)
+# p (square_of_the_sums - sum_of_the_squares)
 
 # The sum of the squares of the first ten natural numbers is,
 
@@ -47,3 +47,21 @@ p (square_of_the_sums - sum_of_the_squares)
 # Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
 
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+
+
+# REFACTORING
+
+sum_of_the_squares = 0
+index = 1
+square_of_the_sums = 0
+100.times do
+  sum_of_the_squares += index * index
+  square_of_the_sums += index
+  index += 1
+end
+square_of_the_sums = square_of_the_sums * square_of_the_sums
+
+
+
+p (square_of_the_sums - sum_of_the_squares)
