@@ -50,18 +50,32 @@
 
 
 
+
 # REFACTORING
 
-sum_of_the_squares = 0
-index = 1
-square_of_the_sums = 0
-100.times do
-  sum_of_the_squares += index * index
-  square_of_the_sums += index
-  index += 1
-end
-square_of_the_sums = square_of_the_sums * square_of_the_sums
+# sum_of_the_squares = 0
+# index = 1
+# square_of_the_sums = 0
+# 100.times do
+#   sum_of_the_squares += index * index
+#   square_of_the_sums += index
+#   index += 1
+# end
+# square_of_the_sums = square_of_the_sums * square_of_the_sums
 
 
 
-p (square_of_the_sums - sum_of_the_squares)
+# p (square_of_the_sums - sum_of_the_squares)
+
+# apples = [12,5,2,1,5,3]
+
+# index = 0
+# sum = 0
+# apples.length.times do
+#   sum += apples[index]
+#   index += 1
+# end
+
+# p sum
+
+# p apples.reduce(:+)
