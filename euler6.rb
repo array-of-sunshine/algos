@@ -15,7 +15,7 @@ index = 1
   sum += index * index
   index += 1
 end
-p sum
+sum_of_the_squares = sum
 
 
 # square of the sum
@@ -23,8 +23,20 @@ p sum
 
 # subtract the two numbers
 
+# start off with number 1 -- DONE
+# make a loop -- DONE
+# add the numbers together
+# square the end result
 
+sum = 0
+index = 1
+10.times do
+  sum += index
+  index += 1
+end
+square_of_the_sums = sum * sum
 
+p (square_of_the_sums - sum_of_the_squares)
 
 # The sum of the squares of the first ten natural numbers is,
 
